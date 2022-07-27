@@ -12,4 +12,19 @@ body {
 
 body {
   font-family: "Cormorant SC", sans-serif;
+}
+
+/* ----------------------------------------- */
+/* ---------------- HEADER ----------------- */
+/* ----------------------------------------- */
+.main-header {
+  display: flex;
+  flex-direction: column; /* columna  */
+}
+
+#menu {
+  display: none;
+}
+#menu:checked + .nav-bar {
+  display: block;
 }/*# sourceMappingURL=main.css.map */

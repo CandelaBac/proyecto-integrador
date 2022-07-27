@@ -1,0 +1,59 @@
+/* ----------------------------------------- */
+/* ---------------- HEADER ----------------- */
+/* ----------------------------------------- */
+
+.main-header {
+    display: flex;
+    flex-direction: column ; /* columna  */
+}
+
+#menu {
+    display: none;
+
+    &:checked + .nav-bar {
+        display: block;
+
+        &:checked ~ .search-bar .menu-toggle__label {
+            background-color: peru;
+        }
+
+    }
+}
+
+/* ----------------------------------------- */
+/* ---------------- NAV BAR ---------------- */
+/* ----------------------------------------- */
+
+.nav-bar {
+    background-color: rgb(217, 190, 154);
+
+    &__nav-list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+
+        @media (max-width: 768px) {
+            &{
+                flex-direction: column;
+            }
+        }
+    }
+    &__nav-item {
+        text-align: center;
+        background-color: lightcoral;
+    }
+
+    &__nav-link {
+        display: block;
+        background-color: pink;
+        color: white;
+        padding: 1em 2em;
+        text-decoration: none;
+    }
+    @media (max-width: 768px) {
+        & {
+            display: flex;
+        }
+    }
+}
+
